@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee4d0">
+  <title>The Wedding of Raka & Sinta</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PEMBUKA -->
+  <section class="cover" id="cover">
+    <div class="cover-frame frame-gorga"></div>
+    <div class="cover-frame frame-songket"></div>
+
+    <div class="cover-inner">
+      <p class="cover-kicker">UNDANGAN PERNIKAHAN</p>
+      <p class="cover-arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+
+      <div class="cover-couple-art" aria-label="Ilustrasi pasangan pengantin">
+        <svg viewBox="0 0 340 300" role="img">
+          <defs>
+            <linearGradient id="dressColor" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fffdf5"/>
+              <stop offset="1" stop-color="#d9c8a8"/>
+            </linearGradient>
+            <linearGradient id="suitColor" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#405347"/>
+              <stop offset="1" stop-color="#172b24"/>
+            </linearGradient>
+          </defs>
+
+          <ellipse cx="170" cy="274" rx="112" ry="10" fill="#806c4b" opacity=".2"/>
+
+          <!-- Pengantin pria -->
+          <g class="cover-groom">
+            <path d="M90 115 Q94 94 119 94 L143 94 Q164 101 166 126 L174 267 L78 267 Z" fill="url(#suitColor)"/>
+            <path d="M112 98 L130 128 L145 98 L137 93 L120 93 Z" fill="#f3ead9"/>
+            <path d="M130 128 L123 267 L142 267 L137 128 Z" fill="#b79a68"/>
+            <path d="M111 103 L130 126 L119 143 L99 116 Z" fill="#f8f0df"/>
+            <path d="M147 103 L132 126 L144 143 L161 116 Z" fill="#f8f0df"/>
+            <path d="M108 64 Q109 39 132 39 Q155 40 157 66 L153 96 Q133 111 112 94 Z" fill="#b97f5d"/>
+            <path d="M108 68 Q100 34 132 29 Q163 34 159 72 Q148 50 130 51 Q117 54 108 68" fill="#28211e"/>
+            <path d="M105 267 L145 267 L152 287 L101 287 Z" fill="#282522"/>
+          </g>
+
+          <!-- Pengantin wanita -->
+          <g class="cover-bride">
+            <path class="cover-veil" d="M190 71 Q180 20 224 15 Q271 18 282 76 Q300 145 282 258 L256 271 L191 263 Q205 166 184 105 Z" fill="#fffaf0" opacity=".82" stroke="#c8b58f" stroke-width="1.5"/>
+            <path d="M222 104 Q197 105 191 140 L158 267 Q224 287 298 267 L263 140 Q257 105 222 104 Z" fill="url(#dressColor)" stroke="#c4ae84" stroke-width="1.5"/>
+            <path d="M222 104 L202 135 L222 155 L243 135 Z" fill="#e9ddc6"/>
+            <path d="M202 135 L222 155 L243 135 L258 187 L222 207 L187 187 Z" fill="#f7f0e3" stroke="#c7b48e"/>
+            <path d="M188 205 Q222 224 258 205" fill="none" stroke="#b99b65" stroke-width="2"/>
+            <path d="M222 208 L222 272 M205 213 L186 263 M240 213 L260 263" stroke="#cbb58d" stroke-width="1.5"/>
+            <path d="M199 55 Q201 29 225 28 Q251 29 254 58 L249 91 Q226 109 204 90 Z" fill="#d8a17d"/>
+            <path d="M198 62 Q188 23 225 18 Q265 23 256 68 Q244 40 225 42 Q209 43 198 62" fill="#2b211e"/>
+            <path d="M199 64 Q185 92 196 123 L207 99 L207 62 Z" fill="#30251f"/>
+            <path d="M252 64 Q266 92 254 123 L243 99 L244 62 Z" fill="#30251f"/>
+
+            <!-- Buket -->
+            <g class="cover-bouquet">
+              <path d="M185 165 L164 210 L195 225 L211 181 Z" fill="#72836a"/>
+              <circle cx="181" cy="164" r="11" fill="#b97969"/>
+              <circle cx="197" cy="159" r="12" fill="#fffaf0"/>
+              <circle cx="205" cy="176" r="11" fill="#d5b78a"/>
+              <circle cx="185" cy="184" r="10" fill="#ead8bd"/>
+              <circle cx="194" cy="171" r="5" fill="#b89a65"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <p class="cover-date">20 FEBRUARI 2027</p>
+      <h1>Raka <span>&</span> Sinta</h1>
+      <p class="cover-description">Dengan penuh rasa syukur, kami mengundang Anda untuk hadir dan menjadi bagian dari hari bahagia kami.</p>
+      <button class="gold-button" id="openInvitation">Buka Undangan <span>♡</span></button>
+    </div>
+
+    <div class="cover-bottom">G O R G A &nbsp; • &nbsp; K A W U N G &nbsp; • &nbsp; S O N G K E T</div>
+  </section>
+
+  <!-- KONTEN UTAMA -->
+  <main id="mainContent" class="hidden">
+
+    <nav class="navbar">
+      <a class="nav-brand" href="#home">R <span>&</span> S</a>
+      <div class="nav-links">
+        <a href="#home">Beranda</a>
+        <a href="#couple">Mempelai</a>
+        <a href="#events">Acara</a>
+        <a href="#rsvp">Ucapan</a>
+      </div>
+      <button class="music-button" id="musicButton" aria-label="Musik">♫</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero heritage-bg" id="home">
+      <div class="heritage-border"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THE WEDDING CELEBRATION OF</p>
+        <p class="hero-small">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <h1>Raka <span>&</span> Sinta</h1>
+        <div class="gold-divider"><span>❖ ❀ ❖</span></div>
+        <p class="hero-date">Sabtu, 20 Februari 2027</p>
+        <p class="hero-place">Medan, Sumatera Utara</p>
+        <a href="#quran" class="scroll-link">Jelajahi Undangan ↓</a>
+      </div>
+      <div class="heritage-label">NUSANTARA WEDDING</div>
+    </section>
+
+    <!-- AYAT AL-QURAN -->
+    <section class="quran-section heritage-bg" id="quran">
+      <div class="section-heading">
+        <p class="eyebrow">BISMILLAHIRRAHMANIRRAHIM</p>
+        <h2>Doa & Harapan</h2>
+        <div class="gold-divider"><span>❖</span></div>
+      </div>
+
+      <div class="quran-content">
+        <p class="arabic-verse" dir="rtl">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+        </p>
+        <p class="verse-reference">QS. Ar-Rum: 21</p>
+        <p class="translation">
+          “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
+        </p>
+        <p class="verse-closing">— Terjemahan makna QS. Ar-Rum ayat 21 —</p>
+      </div>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="couple-section heritage-bg" id="couple">
+      <div class="section-heading">
+        <p class="eyebrow">TWO HEARTS, ONE PROMISE</p>
+        <h2>Dengan penuh kebahagiaan</h2>
+        <p class="section-intro">
+          Kami bermaksud menyelenggarakan pernikahan putra-putri kami:
+        </p>
+      </div>
+
+      <div class="couple-names">
+        <div class="name-block">
+          <p class="name-label">THE GROOM</p>
+          <h3>Raka Pratama</h3>
+          <div class="name-flourish">❧ ❖ ❧</div>
+          <p>Putra dari</p>
+          <p class="parent-name">Bapak Ahmad & Ibu Sari</p>
+        </div>
+
+        <div class="ampersand">&</div>
+
+        <div class="name-block">
+          <p class="name-label">THE BRIDE</p>
+          <h3>Sinta Maharani</h3>
+          <div class="name-flourish">❧ ❖ ❧</div>
+          <p>Putri dari</p>
+          <p class="parent-name">Bapak Budi & Ibu Ratna</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Menuju Hari Bahagia</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <p class="countdown-date">20 • 02 • 2027</p>
+    </section>
+
+    <!-- CERITA CINTA -->
+    <section class="story-section heritage-bg">
+      <div class="section-heading">
+        <p class="eyebrow">OUR JOURNEY</p>
+        <h2>Kisah Kami</h2>
+        <p class="section-intro">Setiap perjalanan memiliki cerita, dan setiap cerita memiliki takdirnya sendiri.</p>
+      </div>
+
+      <div class="story-timeline">
+        <article class="story-item">
+          <span class="story-symbol">01</span>
+          <div>
+            <h3>Awal Pertemuan</h3>
+            <p>Berawal dari pertemuan sederhana, dua hati mulai mengenal dan menemukan kenyamanan satu sama lain.</p>
+          </div>
+        </article>
+        <article class="story-item">
+          <span class="story-symbol">02</span>
+          <div>
+            <h3>Menjalin Komitmen</h3>
+            <p>Waktu mengajarkan kami arti saling memahami, menjaga, dan tumbuh bersama dalam sebuah hubungan.</p>
+          </div>
+        </article>
+        <article class="story-item">
+          <span class="story-symbol">03</span>
+          <div>
+            <h3>Menuju Hari Bahagia</h3>
+            <p>Dengan restu keluarga dan doa orang-orang tercinta, kami memantapkan hati untuk mengikat janji suci.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACARA -->
+    <section class="events-section heritage-bg" id="events">
+      <div class="section-heading">
+        <p class="eyebrow">JOIN OUR CELEBRATION</p>
+        <h2>Rangkaian Acara</h2>
+        <p class="section-intro">Merupakan suatu kehormatan bagi kami apabila Anda berkenan hadir.</p>
+      </div>
+
+      <div class="event-list">
+        <article class="event-item">
+          <p class="event-number">01 — THE SACRED CEREMONY</p>
+          <h3>Akad Nikah</h3>
+          <div class="event-ornament">❖ ❀ ❖</div>
+          <p class="event-date">Sabtu, 20 Februari 2027</p>
+          <p class="event-time">08.00 – 10.00 WIB</p>
+          <h4>Masjid Raya Al-Mashun</h4>
+          <p>Medan, Sumatera Utara</p>
+          <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Masjid+Raya+Al-Mashun+Medan">Petunjuk Lokasi ↗</a>
+        </article>
+
+        <article class="event-item">
+          <p class="event-number">02 — WEDDING RECEPTION</p>
+          <h3>Resepsi Pernikahan</h3>
+          <div class="event-ornament">❖ ❀ ❖</div>
+          <p class="event-date">Sabtu, 20 Februari 2027</p>
+          <p class="event-time">11.00 – 15.00 WIB</p>
+          <h4>Grand City Hall Medan</h4>
+          <p>Medan, Sumatera Utara</p>
+          <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Grand+City+Hall+Medan">Petunjuk Lokasi ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="gallery-section heritage-bg">
+      <div class="section-heading">
+        <p class="eyebrow">OUR MEMORIES</p>
+        <h2>Galeri Bahagia</h2>
+        <p class="section-intro">Beberapa momen yang ingin kami kenang selamanya.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900" alt="Dekorasi pernikahan">
+        <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900" alt="Momen pernikahan">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=900" alt="Perayaan pernikahan">
+      </div>
+      <p class="gallery-note">Foto di atas merupakan gambar contoh. Ganti dengan foto kedua mempelai.</p>
+    </section>
+
+    <!-- HADIAH -->
+    <section class="gift-section heritage-bg">
+      <div class="section-heading">
+        <p class="eyebrow">A TOKEN OF LOVE</p>
+        <h2>Wedding Gift</h2>
+        <p class="section-intro">Doa dan kehadiran Anda adalah hadiah terindah bagi kami. Namun, bagi yang ingin berbagi tanda kasih, dapat melalui:</p>
+      </div>
+
+      <div class="gift-detail">
+        <p class="gift-bank">BANK BCA</p>
+        <h3>1234567890</h3>
+        <p>a.n. Raka Pratama</p>
+        <button class="outline-button copy-button" data-copy="1234567890">Salin Nomor Rekening</button>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section heritage-bg" id="rsvp">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR PRAYERS MEAN THE WORLD</p>
+        <h2>Ucapan & Kehadiran</h2>
+        <p class="section-intro">Tinggalkan doa dan konfirmasi kehadiran Anda untuk hari bahagia kami.</p>
+      </div>
+
+      <form id="rsvpForm" class="rsvp-form">
+        <label for="guestName">Nama</label>
+        <input id="guestName" type="text" placeholder="Nama lengkap" maxlength="50" required>
+
+        <label for="attendance">Konfirmasi Kehadiran</label>
+        <select id="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Hadir">Insyaallah hadir</option>
+          <option value="Tidak Hadir">Mohon maaf, belum bisa hadir</option>
+          <option value="Masih Ragu">Masih belum pasti</option>
+        </select>
+
+        <label for="guestCount">Jumlah Tamu</label>
+        <select id="guestCount">
+          <option value="1">1 orang</option>
+          <option value="2">2 orang</option>
+          <option value="3">3 orang</option>
+          <option value="4">4 orang</option>
+        </select>
+
+        <label for="guestMessage">Ucapan & Doa</label>
+        <textarea id="guestMessage" placeholder="Tuliskan doa terbaik Anda..." maxlength="300" required></textarea>
+
+        <button class="gold-button submit-button" type="submit">Kirim Ucapan ♡</button>
+      </form>
+
+      <div class="wishes-heading">
+        <h3>Doa dari Tamu</h3>
+        <span id="wishCount">0 ucapan</span>
+      </div>
+      <div id="wishesList" class="wishes-list"></div>
+      <button class="clear-button" id="clearWishes" type="button">Hapus ucapan di perangkat ini</button>
+    </section>
+
+    <!-- PENUTUP -->
+    <footer class="footer heritage-bg">
+      <p class="footer-arabic">جَزَاكُمُ اللَّهُ خَيْرًا</p>
+      <p>Merupakan kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+      <p class="footer-thanks">Terima kasih atas doa dan restunya.</p>
+      <h2>Raka <span>&</span> Sinta</h2>
+      <p class="footer-date">20 FEBRUARI 2027</p>
+      <div class="footer-cultural">BATak GORGA • JAWA KAWUNG • MELAYU SONGKET</div>
+    </footer>
+
+  </main>
+
+  <audio id="weddingMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
